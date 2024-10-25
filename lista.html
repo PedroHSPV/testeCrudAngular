@@ -1,0 +1,24 @@
+<div ng-controller="controllerLista">
+    <h2>Lista de Funcionários</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cargo</th>
+                <th>Salário</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="funcionario in funcionarios">
+                <td>{{ funcionario.nome }}</td>
+                <td>{{ funcionario.cargo }}</td>
+                <td>{{ funcionario.salario }}</td>
+                <td>
+                    <button class="btn btn-warning" ng-click="editarFuncionario(funcionario)">Editar</button>
+                    <button class="btn btn-danger" ng-click="deletarFuncionario(funcionario)">Deletar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,20 @@
+<div>
+    <h2>Cadastrar Funcionário</h2>
+    <form ng-submit="cadastrarFuncionario()">
+        <div class="mb-3">
+            <label>Nome:</label> <!--ng-model/  -->
+            <input type="text" ng-model="novoFuncionario.nome" required class="form-control">
+        </div>
+        <div class="mb-3">
+            <label>Cargo:</label>
+            <input type="text" ng-model="novoFuncionario.cargo" required class="form-control">
+        </div>
+        <div class="mb-3">
+            <label>Salário:</label>
+            <input type="number" ng-model="novoFuncionario.salario" required class="form-control">
+        </div>
+        <button type="submit" class="btn btn-success">Cadastrar</button>
+        <button type="button" class="btn btn-danger" onclick="window.location.href='index.html'">Voltar para menu</button>
+
+    </form>
+</div>
